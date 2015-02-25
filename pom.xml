@@ -7,11 +7,11 @@
         <artifactId>oss-parent</artifactId>
         <version>7</version>
     </parent>
-    
+
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>holderjs</artifactId>
-    <version>2.4.1-SNAPSHOT</version>
+    <version>2.5.2-SNAPSHOT</version>
 
     <name>webjars-holderjs</name>
     <description>WebJar for holder.js</description>
@@ -39,12 +39,12 @@
         <developerConnection>scm:git:https://github.com/webjars/holderjs.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
-    
+
     <dependencies />
-    
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.version>2.4.0</upstream.version>
+        <upstream.version>2.5.2</upstream.version>
         <upstream.url>https://github.com/imsky/holder/archive</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
     </properties>
@@ -54,7 +54,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>wagon-maven-plugin</artifactId>
-                <version>1.0-beta-4</version>
+                <version>1.0</version>
                 <executions>
                     <execution>
                         <phase>process-resources</phase>
@@ -72,7 +72,7 @@
 
             <plugin>
                 <artifactId>maven-antrun-plugin</artifactId>
-                <version>1.7</version>
+                <version>1.8</version>
                 <executions>
                     <execution>
                         <phase>process-resources</phase>
@@ -93,13 +93,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>2.5</version>
+                <version>2.5.1</version>
             </plugin>
 
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.5.1</version>
+                <version>1.6.5</version>
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>sonatype-nexus-staging</serverId>
